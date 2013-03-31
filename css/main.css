@@ -1,0 +1,41 @@
+@import url(http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext,cyrillic);
+
+h1, h2, h3, h4 {
+  font-family: 'Lobster', cursive;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.navbar a:focus {
+  outline: none;
+}
+
+.carousel-inner {
+  height: 160px;
+}
+.carousel-indicators {
+  top: auto;
+  right: auto;
+  bottom: 0;
+  left: 50%;
+  width: 90px;
+  margin-left: -45px;
+}
+.carousel-indicators li {
+  background-color: #ccc;
+  cursor: pointer;
+}
+.carousel-indicators .active {
+  background-color: #333;
+}
+
+.sponsors > div {
+  line-height: 80px;
+  text-align: center;
+}
+.sponsors > div img {
+  vertical-align: middle;
+}

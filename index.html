@@ -1,1 +1,71 @@
-My GitHub Page
+---
+layout: default
+class: home
+
+carousel:
+  - title: The first Latvian IT community driven conference.
+    link: '#organizers'
+    link_text: Organizers »
+  - title: 5 presentation tracks to cover various facets of the software industry.
+    text: From databases to testing, from software craftsmanship to modern web technologies, from Agile methodologies to enterprise solutions.
+    link: '#tracks'
+    link_text: Tracks »
+  - title: “Everyone's invited!”
+    text: That's the motto of this conference. Why? The reason is to show that no matter what part of IT we're involved with, we can learn from each other and nurture our knowledge and experience together.
+    link: '#about'
+    link_text: About »
+  - title: Conference on the seashore of Jurmala.
+    text: Jurmala is the city by the Gulf of Riga stretching along 33 km of coastline, with modern relaxation and resort facilities. It has become the largest resort area in the Baltics, as well as a popular location for international conferences and meetings.
+    link: '#location'
+    link_text: Location »
+---
+<div id="carousel" class="carousel slide">
+    <div class="carousel-inner">
+        {% for item in page.carousel %}
+        <div class="item{% if forloop.first %} active{% endif %}">
+            <h2 class="media-heading">{{ item.title }}</h2>
+            {% if item.text %}<p>{{ item.text }}</p>{% endif %}
+            {% if item.link %}<a href="{{ item.link }}" class="btn">{{ item.link_text }}</a>{% endif %}
+        </div>
+        {% endfor %}
+    </div>
+    <ol class="carousel-indicators">
+        {% for item in page.carousel %}
+        <li data-target="#carousel" data-slide-to="{{ forloop.index0 }}"{% if forloop.first %} class="active"{% endif %}></li>
+        {% endfor %}
+    </ol>
+</div>
+<div class="row">
+    <div class="span4">
+        <h2>Heading</h2>
+        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+        <p><a class="btn" href="#">View details »</a></p>
+    </div>
+    <div class="span4">
+        <h2>Heading</h2>
+        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+        <p><a class="btn" href="#">View details »</a></p>
+    </div>
+    <div class="span4">
+        <h2>Heading</h2>
+        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <p><a class="btn" href="#">View details »</a></p>
+    </div>
+</div>
+<div class="media">
+    <a class="pull-left" href="#">
+        <img class="media-object" data-src="holder.js/128x128">
+    </a>
+    <div class="media-body">
+        <h3 class="media-heading">Media heading</h3>
+        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+    </div>
+</div>
+<div class="sponsors row">
+    <div class="span2"><img src="{{ site.baseurl }}/i/fake/ctco.png" alt="C.T.Co" /></div>
+    <div class="span2"><img src="{{ site.baseurl }}/i/fake/ok.png" alt="Odnoklassniki" /></div>
+    <div class="span2"><img src="{{ site.baseurl }}/i/fake/rubylight.png" alt="Rubylight" /></div>
+    <div class="span2"><img src="{{ site.baseurl }}/i/fake/ebit.png" alt="eBit" /></div>
+    <div class="span2"><img src="{{ site.baseurl }}/i/fake/oreilly.png" alt="O'Reilly" /></div>
+    <div class="span2"><img src="{{ site.baseurl }}/i/fake/tieto.png" alt="Tieto Latvia" /></div>
+</div>
