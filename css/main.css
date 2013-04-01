@@ -112,6 +112,19 @@ a {
 .home .organizers .lvoug img {
   height: 60px;
 }
+@media (min-width: 480px) and (max-width: 767px) {
+  .home .organizers .logo {
+    height: auto;
+    line-height: inherit;
+    float: left;
+    margin: 0 20px 20px 0;
+  }
+  .home .organizers > div {
+    clear: left;
+    margin: 40px 0;
+  }
+}
+
 
 .home .features li {
   margin: 60px 0;
