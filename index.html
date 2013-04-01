@@ -24,7 +24,7 @@ carousel:
         {% for item in page.carousel %}
         <div class="item item{{ forloop.index }}{% if forloop.first %} active{% endif %}">
             <div class="container slide">
-                <h2 class="media-heading">{{ item.title }}</h2>
+                <p class="media-heading">{{ item.title }}</p>
                 {% if item.text %}<p>{{ item.text }}</p>{% endif %}
                 {% if item.link %}<a href="{{ item.link }}" class="btn btn-large disabled">{{ item.link_text }}</a>{% endif %}
             </div>
@@ -36,4 +36,30 @@ carousel:
         <li data-target="#carousel" data-slide-to="{{ forloop.index0 }}"{% if forloop.first %} class="active"{% endif %}></li>
         {% endfor %}
     </ol>
+</div>
+<div class="container">
+    <h2>Organizers</h2>
+    <div class="row">
+        <div class="span4">
+            <p class="text-center">
+                <a href="http://ldn.lv/"><img src="holder.js/200x100" alt="Latvian Developers Network"></a>
+            </p>
+            <h3>Latvian Developers Network</h3>
+            <p>It's all about not being locked in a certain platform or company's culture. LDN is a possibility to share own thoughts, experience and passion for software creation among the whole community.</p>
+        </div>
+        <div class="span4">
+            <p class="text-center">
+                <a href="http://www.agile-latvia.org/"><img src="holder.js/200x100" alt="Agile Latvia"></a>
+            </p>
+            <h3>Agile Latvia</h3>
+            <p>Agile Latvia is a community with a goal to spread information about Agile practices amongst Latvian software development professionals and industry newcomers.</p>
+        </div>
+        <div class="span4">
+            <p class="text-center">
+            <a href="http://www.lvoug.lv/"><img src="holder.js/200x100" alt="Latvian Oracle User Group"></a>
+            </p>
+            <h3>Latvian Oracle User Group</h3>
+            <p>Latvian Oracle User Group (LVOUG) ir neatkarīga organizācija, kas apvieno Oracle lietotājus, profesionāļus un citus interesantus Latvijā.</p>
+        </div>
+    </div>
 </div>

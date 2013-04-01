@@ -4,15 +4,36 @@ body {
   background-image: url('../i/body-bg.jpg');
   font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: normal;
+  line-height: 1.5em;
 }
 
 h1, h2, h3, h4, strong {
   font-weight: 500;
 }
 
+a {
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
 .container {
   max-width: 1000px;
   margin: 0 auto;
+}
+
+.container h2 {
+  display: inline-block;
+  margin: 40px 0 30px;
+  padding-bottom: 5px;
+  font-size: 28px;
+  font-weight: 100;
+  font-style: italic;
+  color: #777;
+  border-bottom: 1px solid #999;
+}
+.container h3 {
+  font-size: 17px;
 }
 
 .navbar a:focus {
@@ -44,7 +65,13 @@ h1, h2, h3, h4, strong {
 .carousel-inner .item p {
   margin: 20px 0;
 }
-.carousel-inner .item:first-child .media-heading {
+.carousel-inner .item p.media-heading {
+  margin: 0;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.2em;
+}
+.carousel-inner .item:first-child p.media-heading {
   margin-bottom: 40px;
   font-size: 42px;
 }
@@ -63,7 +90,7 @@ h1, h2, h3, h4, strong {
 .carousel-indicators {
   top: auto;
   right: auto;
-  bottom: 10px;
+  bottom: 15px;
   left: 50%;
   width: 90px;
   margin-left: -45px;
@@ -78,6 +105,42 @@ h1, h2, h3, h4, strong {
 }
 .sponsors > div img {
   vertical-align: middle;
+}
+
+#footer {
+  margin-top: 80px;
+  padding: 40px 0;
+  background-color: #252528;
+  color: #bbb;
+  font-weight: 300;
+}
+#footer hr {
+  border-top: 1px solid #555;
+  border-bottom: none;
+}
+#footer .social-links {
+  margin-bottom: 40px;
+  text-align: center;
+}
+#footer .social-links a {
+  color: #999;
+  font-size: 24px;
+  text-decoration: none;
+}
+#footer .social-links i {
+  font-size: 42px;
+}
+#footer .social-links a:hover {
+  color: #fff;
+}
+#footer .social-buttons iframe {
+  width: 100px !important;
+}
+#footer .social-buttons #___plusone_0 {
+  width: 80px !important;
+}
+#footer .social-buttons .IN-widget {
+  margin-right: 20px;
 }
 
 
@@ -102,9 +165,6 @@ h1, h2, h3, h4, strong {
   #wildcard .navbar-inner a {
     color: #999;
     color: rgba(255,255,255,0.6);
-    -webkit-transition: color 0.4s, text-shadow 0.4s;
-    -moz-transition: color 0.4s, text-shadow 0.4s;
-    transition: color 0.4s, text-shadow 0.4s;
   }
   #wildcard .navbar-inner a:hover,
   #wildcard .navbar-inner .brand,
