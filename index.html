@@ -19,13 +19,15 @@ carousel:
     link: '#location'
     link_text: Location »
 ---
-<div id="carousel" class="carousel slide">
+<div id="carousel" class="carousel slide hidden-phone">
     <div class="carousel-inner">
         {% for item in page.carousel %}
-        <div class="item{% if forloop.first %} active{% endif %}">
-            <h2 class="media-heading">{{ item.title }}</h2>
-            {% if item.text %}<p>{{ item.text }}</p>{% endif %}
-            {% if item.link %}<a href="{{ item.link }}" class="btn">{{ item.link_text }}</a>{% endif %}
+        <div class="item item{{ forloop.index }}{% if forloop.first %} active{% endif %}">
+            <div class="container slide">
+                <h2 class="media-heading">{{ item.title }}</h2>
+                {% if item.text %}<p>{{ item.text }}</p>{% endif %}
+                {% if item.link %}<a href="{{ item.link }}" class="btn btn-large disabled">{{ item.link_text }}</a>{% endif %}
+            </div>
         </div>
         {% endfor %}
     </div>
@@ -34,38 +36,4 @@ carousel:
         <li data-target="#carousel" data-slide-to="{{ forloop.index0 }}"{% if forloop.first %} class="active"{% endif %}></li>
         {% endfor %}
     </ol>
-</div>
-<div class="row">
-    <div class="span4">
-        <h2>Heading</h2>
-        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-        <p><a class="btn" href="#">View details »</a></p>
-    </div>
-    <div class="span4">
-        <h2>Heading</h2>
-        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-        <p><a class="btn" href="#">View details »</a></p>
-    </div>
-    <div class="span4">
-        <h2>Heading</h2>
-        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        <p><a class="btn" href="#">View details »</a></p>
-    </div>
-</div>
-<div class="media">
-    <a class="pull-left" href="#">
-        <img class="media-object" data-src="holder.js/128x128">
-    </a>
-    <div class="media-body">
-        <h3 class="media-heading">Media heading</h3>
-        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-    </div>
-</div>
-<div class="sponsors row">
-    <div class="span2"><img src="{{ site.baseurl }}/i/fake/ctco.png" alt="C.T.Co" /></div>
-    <div class="span2"><img src="{{ site.baseurl }}/i/fake/ok.png" alt="Odnoklassniki" /></div>
-    <div class="span2"><img src="{{ site.baseurl }}/i/fake/rubylight.png" alt="Rubylight" /></div>
-    <div class="span2"><img src="{{ site.baseurl }}/i/fake/ebit.png" alt="eBit" /></div>
-    <div class="span2"><img src="{{ site.baseurl }}/i/fake/oreilly.png" alt="O'Reilly" /></div>
-    <div class="span2"><img src="{{ site.baseurl }}/i/fake/tieto.png" alt="Tieto Latvia" /></div>
 </div>
