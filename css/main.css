@@ -24,7 +24,7 @@ a {
 
 .container h2 {
   display: inline-block;
-  margin: 40px 0 30px;
+  margin: 50px 0;
   padding-bottom: 5px;
   font-size: 28px;
   font-weight: 100;
@@ -98,6 +98,13 @@ a {
 .carousel-indicators li {
   cursor: pointer;
 }
+
+
+.home .features i {
+  font-size: 42px;
+  color: #1189d9;
+}
+
 
 .sponsors > div {
   line-height: 80px;
