@@ -95,6 +95,24 @@ a {
 }
 
 
+.home .organizers .logo {
+  height: 120px;
+  text-align: center;
+  line-height: 120px;
+}
+.home .organizers .logo img {
+  vertical-align: bottom;
+}
+.home .organizers .ldn img {
+  height: 120px;
+}
+.home .organizers .agile-latvia img {
+  height: 90px;
+}
+.home .organizers .lvoug img {
+  height: 60px;
+}
+
 .home .features li {
   margin: 60px 0;
   padding: 0 10px;
