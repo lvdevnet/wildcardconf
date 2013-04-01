@@ -11,7 +11,7 @@ h1, h2, h3, h4, strong {
   font-weight: 500;
 }
 
-a {
+a:not(.btn) {
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
   transition: all 0.4s;
@@ -169,6 +169,18 @@ a {
 }
 
 
+.home .register {
+  margin-top: 100px;
+  font-size: 21px;
+  font-weight: 300;
+}
+.home .register .btn {
+  margin: 0 5px;
+  padding: 14px 24px;
+  font-size: 21px;
+}
+
+
 .sponsors > div {
   line-height: 80px;
   text-align: center;
@@ -177,8 +189,9 @@ a {
   vertical-align: middle;
 }
 
+
 #footer {
-  margin-top: 80px;
+  margin-top: 60px;
   padding: 40px 0;
   background-color: #252528;
   color: #bbb;
