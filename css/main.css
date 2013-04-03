@@ -34,10 +34,10 @@ a:not(.btn) {
 .navbar a:focus {
   outline: none;
 }
-#wildcard .navbar-inner {
+#main-menu {
   background-image: none;
 }
-#wildcard .navbar-inner .brand {
+#main-menu .brand {
   margin: 0;
   padding: 0 10px;
   font-weight: bold;
@@ -47,7 +47,7 @@ a:not(.btn) {
 
 .carousel-inner .item {
   height: 180px;
-  padding-top: 60px;
+  padding-top: 80px;
   padding-bottom: 60px;
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -246,19 +246,27 @@ a:not(.btn) {
 
 
 @media (min-width: 979px) {
-  #wildcard .navbar-inner {
+  #main-menu {
+    padding: 10px 0;
     background-color: rgba(0,0,0,0.4);
     border-color: #666;
     border-color: rgba(0,0,0,0.5);
     text-transform: uppercase;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
   }
-  #wildcard .navbar-inner a {
+  #main-menu.narrow {
+    padding: 0;
+    background-color: rgba(0,0,0,0.75);
+  }
+  #main-menu a {
     color: #999;
     color: rgba(255,255,255,0.6);
   }
-  #wildcard .navbar-inner a:hover,
-  #wildcard .navbar-inner .brand,
-  #wildcard .navbar-inner .active > * {
+  #main-menu a:hover,
+  #main-menu .brand,
+  #main-menu .active > * {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
