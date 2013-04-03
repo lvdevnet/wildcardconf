@@ -206,15 +206,22 @@ a:not(.btn) {
   text-align: center;
 }
 #footer .social-links a {
-  color: #999;
   font-size: 24px;
   text-decoration: none;
+  color: #fff;
+  opacity: 0.6;
+}
+#footer .social-links a:hover {
+  opacity: 1;
 }
 #footer .social-links i {
   font-size: 42px;
 }
-#footer .social-links a:hover {
-  color: #fff;
+#footer .social-links .icon-lanyrd {
+  width: auto;
+  height: 42px;
+  margin: 0 5px;
+  vertical-align: bottom;
 }
 #footer .social-buttons iframe {
   width: 100px !important;
