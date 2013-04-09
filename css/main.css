@@ -50,6 +50,8 @@ a:not(.btn) {
   height: 180px;
   padding-top: 80px;
   padding-bottom: 60px;
+  background-color: #777;
+  background-color: rgba(0,0,0,0.5);
   background-size: 100% auto;
   background-repeat: no-repeat;
   color: #fff;
