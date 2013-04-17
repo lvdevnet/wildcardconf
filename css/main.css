@@ -172,6 +172,15 @@ a:not(.btn) {
 }
 
 
+.home .platinum.sponsors {
+  font-size: 21px;
+  font-weight: 300;
+}
+.home .platinum.sponsors img {
+  width: 200px;
+}
+
+
 .home .register {
   margin-top: 100px;
   font-size: 21px;
