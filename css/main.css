@@ -11,6 +11,15 @@ body {
   background-image: url('../i/body-bg.jpg');
   padding-bottom: 60px;
 }
+@media (max-width: 767px) {
+  body {
+    background-color: #fafafa;
+    background-image: url('../i/body-bg.jpg');
+  }
+  #wrap {
+    background: none;
+  }
+}
 
 h1, h2, h3, h4, strong {
   font-weight: 500;
@@ -51,7 +60,7 @@ a:not(.btn) {
   text-transform: uppercase;
 }
 
-.carousel-inner .item {
+.home .carousel-inner .item {
   height: 180px;
   padding-top: 80px;
   padding-bottom: 60px;
@@ -65,29 +74,29 @@ a:not(.btn) {
   font-weight: lighter;
   line-height: 1.5em;
 }
-.carousel-inner .item p {
+.home .carousel-inner .item p {
   margin: 20px 0;
 }
-.carousel-inner .item p.media-heading {
+.home .carousel-inner .item p.media-heading {
   margin: 0;
   font-weight: 500;
   font-size: 32px;
   line-height: 1.2em;
 }
-.carousel-inner .item:first-child p.media-heading {
+.home .carousel-inner .item:first-child p.media-heading {
   margin-bottom: 40px;
   font-size: 42px;
 }
-.carousel-inner .item1 {
+.home .carousel-inner .item1 {
   background-image: url('../i/carousel/conf.jpg');
 }
-.carousel-inner .item2 {
+.home .carousel-inner .item2 {
   background-image: url('../i/carousel/splash.jpg');
 }
-.carousel-inner .item3 {
+.home .carousel-inner .item3 {
   background-image: url('../i/carousel/ocean.jpg');
 }
-.carousel-inner .item4 {
+.home .carousel-inner .item4 {
   background-image: url('../i/carousel/jurmala.jpg');
 }
 .carousel-indicators {
@@ -204,6 +213,31 @@ a:not(.btn) {
 }
 .sponsors > div img {
   vertical-align: middle;
+}
+
+
+.location .carousel {
+  margin: 0 auto;
+  width: 320px;
+}
+.location .carousel-indicators {
+  width: 50px;
+  margin-left: -25px;
+}
+.location .carousel-control {
+  top: 50%;
+  opacity: 0;
+  -webkit-transition: opacity 0.4s;
+  -moz-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+.location .carousel:hover .carousel-control {
+  opacity: 0.5;
+}
+@media (max-width: 767px) {
+  .location .carousel {
+    margin: 30px auto;
+  }
 }
 
 
