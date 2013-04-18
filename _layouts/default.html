@@ -21,7 +21,8 @@
                 <h1 class="brand">Wildcard</h1>
                 <div class="nav-collapse collapse" style="height: 0px;">
                     <ul class="nav pull-right">
-                        <li class="active"><a href="#">Home</a></li>
+                        <li{% if page.class == 'home' %} class="active"{% endif %}><a href="{{ site.baseurl }}/">Home</a></li>
+                        <li{% if page.class == 'about' %} class="active"{% endif %}><a href="{{ site.baseurl }}/about.html">About</a></li>
                         <li><a href="http://soon.wildcardconf.com">Register</a></li>
                     </ul>
                 </div>

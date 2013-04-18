@@ -255,12 +255,18 @@ a:not(.btn) {
     padding-bottom: 50px;
   }
 }
+@media (min-width: 980px) {
+  body {
+    padding-top: 60px;
+  }
+  body.home {
+    padding-top: 0;
+  }
+}
 
 
-@media (min-width: 979px) {
+@media (min-width: 980px) {
   #main-menu {
-    padding: 10px 0;
-    background-color: rgba(0,0,0,0.4);
     border-color: #666;
     border-color: rgba(0,0,0,0.5);
     text-transform: uppercase;
@@ -268,7 +274,12 @@ a:not(.btn) {
     -moz-transition: all 0.4s;
     transition: all 0.4s;
   }
-  #main-menu.narrow {
+  body.home #main-menu {
+    padding: 10px 0;
+    background-color: rgba(0,0,0,0.4);
+  }
+  #main-menu,
+  body.home #main-menu.narrow {
     padding: 0;
     background-color: rgba(0,0,0,0.75);
   }
@@ -294,5 +305,52 @@ a:not(.btn) {
     margin-right: -20px;
     padding-left: 20px;
     padding-right: 20px;
+  }
+}
+
+
+.about-what h2 {
+  margin-bottom: 20px;
+}
+
+
+.nav-circles li a {
+  width: 180px;
+  height: 135px;
+  padding: 45px 0 0 0;
+  margin: 70px 0 0 -45px;
+  font-size: 22px;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  background-color: #333337;
+  background-color: rgba(37,37,40,0.9);
+  color: #fff;
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+.nav-circles li:first-child a {
+  margin-left: 5px;
+}
+.nav-circles li a:hover {
+  background-color: #0088cc;
+}
+#wildcard .nav-circles li i {
+  display: block;
+  width: auto;
+  margin-bottom: 10px;
+  font-size: 70px;
+}
+@media (max-width: 979px) {
+  .nav-circles li a {
+    width: 130px;
+    height: 105px;
+    padding: 25px 0 0 0;
+    margin-left: -25px;
+  }
+  #wildcard .nav-circles li i {
+    font-size: 56px;
   }
 }

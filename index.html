@@ -4,20 +4,16 @@ class: home
 
 carousel:
   - title: The first Latvian IT community driven conference.
-    link: '#organizers'
+    link: '/#organizers'
     link_text: Organizers »
   - title: 5 presentation tracks to cover various facets of the software industry.
     text: From databases to testing, from software craftsmanship to modern web technologies, from Agile methodologies to enterprise solutions.
-    link: '#tracks'
-    link_text: Tracks »
   - title: “Everyone's invited!”
     text: That's the motto of this conference. Why? The reason is to show that no matter what part of IT we're involved with, we can learn from each other and nurture our knowledge and experience together.
-    link: '#about'
+    link: /about.html
     link_text: About »
   - title: Conference on the seashore of Jurmala.
     text: Jurmala is the city by the Gulf of Riga stretching along 33 km of coastline, with modern relaxation and resort facilities. It has become the largest resort area in the Baltics, as well as a popular location for international conferences and meetings.
-    link: '#location'
-    link_text: Location »
 ---
 <div id="carousel" class="carousel slide hidden-phone">
     <div class="carousel-inner">
@@ -26,7 +22,7 @@ carousel:
             <div class="container slide">
                 <p class="media-heading">{{ item.title }}</p>
                 {% if item.text %}<p>{{ item.text }}</p>{% endif %}
-                {% if item.link %}<a href="{{ item.link }}" class="btn btn-large disabled">{{ item.link_text }}</a>{% endif %}
+                {% if item.link %}<a href="{{ site.baseurl }}{{ item.link }}" class="btn btn-large">{{ item.link_text }}</a>{% endif %}
             </div>
         </div>
         {% endfor %}
@@ -38,6 +34,7 @@ carousel:
     </ol>
 </div>
 <div class="container">
+    <div id="organizers"></div>
     <h2>Organizers</h2>
     <div class="organizers row">
         <div class="span4">
@@ -71,7 +68,7 @@ carousel:
                     <i class="icon-comments"></i>
                     Community-driven event
                 </h3>
-                <p>It's community driven conference, so we know what guys and gals like us need. It's a social event — the rare kind of IT events, which are mostly thechnology or vendor specific.</p>
+                <p>It's community driven conference, so we know what guys and gals like us need. It's a social event — the rare kind of IT events, which are mostly technology or vendor specific.</p>
             </div>
         </li>
         <li class="media">
