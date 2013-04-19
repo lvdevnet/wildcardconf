@@ -352,6 +352,43 @@ a:not(.btn) {
 }
 
 
+.about-tracks > * {
+  padding: 15px 0;
+  background-color: #fff;
+  -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  -moz-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  text-align: center;
+}
+.about-tracks a {
+  cursor: pointer;
+}
+.about-tracks a:hover {
+  text-decoration: none;
+}
+.about-tracks > * i {
+  display: block;
+  width: auto;
+  margin-bottom: 5px;
+  font-size: 42px;
+}
+@media (max-width: 979px) {
+  .about-tracks > * {
+    font-size: 13px;
+  }
+}
+@media (max-width: 767px) {
+  .about-tracks > * {
+    margin: 10px auto;
+    width: 150px;
+    font-size: 14px;
+  }
+}
+
+
 .nav-circles li a {
   width: 180px;
   height: 135px;
