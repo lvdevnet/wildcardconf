@@ -59,6 +59,11 @@ a:not(.btn) {
   color: #fff;
   text-transform: uppercase;
 }
+#main-menu .brand a,
+#main-menu .brand a:hover {
+  color: #fff;
+  text-decoration: none;
+}
 
 .home .carousel-inner .item {
   height: 175px;
