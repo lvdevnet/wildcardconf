@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Merienda:400|Roboto:100italic,300,400,500&subset=latin,latin-ext,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Roboto:100italic,300,400,500&subset=latin,latin-ext,cyrillic);
 
 body {
   background-color: #252528;
@@ -54,8 +54,10 @@ a:not(.btn) {
 #main-menu .brand {
   margin: 0;
   padding: 0 10px;
-  font-family: 'Merienda', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 40px;
+  letter-spacing: 3px;
   color: #fff;
   text-transform: uppercase;
 }
