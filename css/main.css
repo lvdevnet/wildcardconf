@@ -101,10 +101,13 @@ a:not(.btn) {
   background-image: url('../i/carousel/splash.jpg');
 }
 .home .carousel-inner .item3 {
-  background-image: url('../i/carousel/chairs.jpg');
+  background-image: url('../i/carousel/hands.jpg');
 }
 .home .carousel-inner .item4 {
   background-image: url('../i/carousel/jurmala.jpg');
+}
+.home .carousel-inner .item5 {
+  background-image: url('../i/carousel/chairs.jpg');
 }
 .carousel-indicators {
   top: auto;
