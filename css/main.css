@@ -615,12 +615,12 @@ a:not(.btn) {
   display: none !important;
 }
 .socialicons-tw{
-  background: url('../i/social/twitter.png') no-repeat;
+  background: url('../i/social/Twitter.png') no-repeat;
   width: 265px;
   height: 36px;
 }
 .socialicons-tw_h{
-  background: url('../i/social/twitter_h.png') no-repeat;
+  background: url('../i/social/Twitter_h.png') no-repeat;
   width: 265px;
   height: 36px;
   display: none !important;
@@ -773,10 +773,10 @@ a:not(.btn) {
   margin-bottom: 0;
 }
 
-.media{
+.row .media{
   margin: 0px;
 }
-.media p{
+.row .media p{
   color: #939394;
   font-size: 19px;
   margin-bottom: 0px;
