@@ -132,16 +132,16 @@ a:not(.btn) {
   line-height: 120px;
 }
 .home .organizers .logo img {
-  vertical-align: bottom;
+  vertical-align: middle;
 }
 .home .organizers .ldn img {
   height: 120px;
 }
 .home .organizers .agile-latvia img {
-  height: 90px;
+  height: 100px;
 }
 .home .organizers .lvoug img {
-  height: 60px;
+  height: 70px;
 }
 @media (min-width: 480px) and (max-width: 767px) {
   .home .organizers .logo {
@@ -782,4 +782,35 @@ a:not(.btn) {
   margin-bottom: 0px;
   font-style: italic;
   line-height: 24px;
+}
+
+.about .conferences .logo {
+  height: 140px;
+  text-align: center;
+  line-height: 140px;
+  padding-top: 20px;
+}
+.about .conferences .logo img {
+  vertical-align: middle;
+}
+.about .conferences .agile-tour img {
+  height: 90px;
+}
+.about .conferences .agile-riga-day img {
+  height: 100px;
+}
+.about .conferences .oug-harmony img {
+  height: 130px;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .about .conferences .logo {
+    height: auto;
+    line-height: inherit;
+    float: left;
+    margin: 0 20px 20px 0;
+  }
+  .about .conferences > div {
+    clear: left;
+    margin: 40px 0;
+  }
 }
