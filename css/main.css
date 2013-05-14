@@ -569,6 +569,12 @@ a:not(.btn) {
 #team .people .bio_box .info a:hover span.socialicons-li_h{
   display: inline-block !important;
 }
+#team .people .bio_box .info a:hover span.socialicons-www{
+  display: none;
+}
+#team .people .bio_box .info a:hover span.socialicons-www_h{
+  display: inline-block !important;
+}
 #team .people .bio_box .info a:hover span.socialicons-tw{
   display: none;
 }
@@ -610,6 +616,17 @@ a:not(.btn) {
 }
 .socialicons-li_h{
   background: url('../i/social/LinkedIn_h.png') no-repeat;
+  width: 265px;
+  height: 36px;
+  display: none !important;
+}
+.socialicons-www{
+  background: url('../i/social/globe.png') no-repeat;
+  width: 265px;
+  height: 36px;
+}
+.socialicons-www_h{
+  background: url('../i/social/globe_h.png') no-repeat;
   width: 265px;
   height: 36px;
   display: none !important;
