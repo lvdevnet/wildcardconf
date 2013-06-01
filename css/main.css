@@ -143,6 +143,14 @@ a:not(.btn) {
 .home .organizers .lvoug img {
   height: 70px;
 }
+.home .co-organizers .logo {
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+}
+.home .organizers .co-org img {
+  height: 40px;
+}
 @media (min-width: 480px) and (max-width: 767px) {
   .home .organizers .logo {
     height: auto;
