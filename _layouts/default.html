@@ -23,12 +23,12 @@
                     <div class="nav-collapse collapse" style="height: 0px;">
                         <ul class="nav pull-right">
                             <li{% if page.class == 'home' %} class="active"{% endif %}><a href="{{ site.baseurl }}/">Home</a></li>
+                            <li{% if page.class == 'registration' %} class="active"{% endif %}><a href="{{ site.baseurl }}/registration.html">Registration</a></li>
                             <li{% if page.class == 'program' %} class="active"{% endif %}><a href="{{ site.baseurl }}/program.html">Program</a></li>
                             <li{% if page.class == 'speakers' %} class="active"{% endif %}><a href="{{ site.baseurl }}/speakers.html">Speakers</a></li>
                             <li{% if page.class == 'location' %} class="active"{% endif %}><a href="{{ site.baseurl }}/location.html">Location</a></li>
                             <li{% if page.class == 'for-sponsors' %} class="active"{% endif %}><a href="{{ site.baseurl }}/sponsors.html">For sponsors</a></li>
                             <li{% if page.class == 'about' %} class="active"{% endif %}><a href="{{ site.baseurl }}/about.html">About</a></li>
-                            <li><a href="http://soon.wildcardconf.com">Stay tuned</a></li>
                         </ul>
                     </div>
                 </div>
@@ -39,6 +39,7 @@
         {{ content }}
     </div>
 </div>
+<div><a name="social"></a></div>
 <div id="footer">
     <div class="container">
         <ul class="social-links unstyled inline">
