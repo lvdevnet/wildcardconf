@@ -12,7 +12,7 @@ class: program
         </div>
     </div>
 </div>
-<div class="container bottom">
+<div class="container">
     <div class="row-fluid session">
         <div class="span2 time">8:30 - 9:00</div>
         <div class="span10">Registration</div>
@@ -43,7 +43,7 @@ class: program
     <div class="row-fluid session">
     	<div class="span2 time">11:00 - 12:00</div>
     	<div class="span2">?</div>
-    	<div class="span2">?</div>
+    	<div class="span2"><div class="session-title"><a href="#t2-s1">Exploring PL/SQL New Features and Best Practices for Better Performance by Ami Aharonovich</a></div></div>
     	<div class="span2">?</div>
     	<div class="span2">?</div>
     	<div class="span2">?</div>
@@ -51,7 +51,7 @@ class: program
     <div class="row-fluid session">
         <div class="span2 time">12:00 - 13:00</div>
         <div class="span2">?</div>
-        <div class="span2">?</div>
+        <div class="span2"><div class="session-title"><a href="#t2-s2">Database Design with Oracle SQL Developer Data Modeler by Heli Helskyaho</a></div></div>
         <div class="span2">?</div>
         <div class="span2">?</div>
         <div class="span2">?</div>
@@ -69,8 +69,8 @@ class: program
     </div>
     <div class="row-fluid session">
         <div class="span2 time">14:00 - 14:30</div>
-        <div class="span2">?</div>
-        <div class="span2">?</div>
+        <div class="span2"><div class="session-title"><a href="#t1-s3">Data Vault in Business Intelligence by Ilja Dmitrijev</a></div></div>
+        <div class="span2"><div class="session-title"><a href="#t2-s3">Shared Database Concurrency by Aivars Kalvāns</a></div></div>
         <div class="span2">?</div>
         <div class="span2">?</div>
         <div class="span2">?</div>
@@ -78,7 +78,7 @@ class: program
     <div class="row-fluid session">
         <div class="span2 time">14:45 - 15:15</div>
         <div class="span2">?</div>
-        <div class="span2">?</div>
+        <div class="span2"><div class="session-title"><a href="#t2-s4">What's Hot and What's Not — An Overview of Oracle Development Tools by Sten Vesterli</a></div></div>
         <div class="span2">?</div>
         <div class="span2">?</div>
         <div class="span2">?</div>
@@ -86,7 +86,7 @@ class: program
     <div class="row-fluid session">
         <div class="span2 time">15:30 - 16:00</div>
         <div class="span2">?</div>
-        <div class="span2">?</div>
+        <div class="span2"><div class="session-title"><a href="#t2-s5">The Oracle License Police and Beer by Mogens Nørgaard</a></div></div>
         <div class="span2">?</div>
         <div class="span2">?</div>
         <div class="span2">?</div>
@@ -103,6 +103,68 @@ class: program
         <div class="span2 time">17:30 - 18:00</div>
         <div class="span10">Closing</div>
     </div>
+</div>
+
+<div class="container bottom">
+    <div><a name="sessions"></a></div>
+    <h2>Sessions</h2>
+    <div class="row row1 bottom">
+        <div><a name="t1-s3"></a></div>
+        <div class="sessions_box span12">
+            <p class="topic">Data Vault in Business Intelligence</p>
+            <p class="speaker"><a href="{{ site.baseurl }}/speakers.html#spk-iljadmitrijev">Ilja Dmitrijev</a></p>
+            <p class="abstract">Recently arised data modelling methodology called Data Vault is becoming increasingly popular in Business Intelligence area. Data Vault is an interesting and powerful alternative to 3NF and Dimensional modelling (Star schemas) for relational Enterprise Data Warehousing. The goal of presentation is to introduce concepts of DV, show how DV fits into EDW projects and how it increases felxibility, scalability and agility of solutions as well as what kind of benefits it will give comparing to star schema and 3NF based data warehouses.</p>
+        </div>
+    </div>
+    <div class="row row1">
+        <div><a name="t2-s1"></a></div>
+        <div class="sessions_box span12">
+            <p class="topic">Exploring PL/SQL New Features and Best Practices for Better Performance</p>
+            <p class="speaker"><a href="{{ site.baseurl }}/speakers.html#spk-amiaharonovich">Ami Aharonovich</a></p>
+            <p class="abstract">Oracle Database 11g brings many new features and enhancements to PL/SQL. These will help you to improve your applications and database performance, enhance applications functionality, provide better security for your applications and increase your productivity as a database developer. This session will present best practices for implementing Oracle database 11g new PL/SQL programming language features and enhancements that can be used to improve programming functionality, performance and usability. Participants will learn about new performance related features, new trigger options, PL/SQL function result cache, bulk binding enhancements, subprogram inlining, new security features and more.</p>
+        </div>
+    </div>
+    <div class="row row1">
+        <div><a name="t2-s2"></a></div>
+        <div class="sessions_box span12">
+            <p class="topic">Database Design with Oracle SQL Developer Data Modeler</p>
+            <p class="speaker"><a href="{{ site.baseurl }}/speakers.html#spk-helihelskyaho">Heli Helskyaho</a></p>
+            <p class="abstract">The more agile the project is the more flexible and well documented the database design must be. In order to be able to design database properly, one will need a tool. Is Oracle SQL Developer Data Modeler a good tool for that? How does it work? What can you do with it? Does it support agile design? In this presentation, Heli will explain and show how the design can be done with Oracle SQL Developer Data Modeler.</p>
+        </div>
+    </div>
+    <div class="row row1">
+        <div><a name="t2-s3"></a></div>
+        <div class="sessions_box span12">
+            <p class="topic">Shared Database Concurrency</p>
+            <p class="speaker"><a href="{{ site.baseurl }}/speakers.html#spk-aivarskalvans">Aivars Kalvāns</a></p>
+            <p class="abstract">Everyone is talking about shared memory versus message passing concurrency and lock-free algorithms in Java and other programming languages. But we forget that for most applications using a database the bottleneck will be in the database. So let's learn about building blocks of concurrent applications in Oracle database before jumping on the NoSQL bandwagon.</p>
+        </div>
+    </div>
+    <div class="row row1">
+        <div><a name="t2-s4"></a></div>
+        <div class="sessions_box span12">
+            <p class="topic">What's Hot and What's Not — An Overview of Oracle Development Tools</p>
+            <p class="speaker"><a href="{{ site.baseurl }}/speakers.html#spk-stenvesterli">Sten Vesterli</a></p>
+            <p class="abstract">This presentation examines all of the most important development tools and technologies available from Oracle today, discussing the strong and weak points of each: Application Express (declarative development in web browser, PL/SQL business logic, data-driven design); Application Development Framework (declarative development with JDeveloper, Java business logic, user interface driven design; Oracle Forms (the classical Oracle development tool, PL/SQL logic, data-driven design). The presentation is concluded with an overview and recommendation for how to choose the right tool and application development approach.</p>
+        </div>
+    </div>
+    <div class="row row1">
+        <div><a name="t2-s5"></a></div>
+        <div class="sessions_box span12">
+            <p class="topic">The Oracle License Police and Beer</p>
+            <p class="speaker"><a href="{{ site.baseurl }}/speakers.html#spk-mogensnorgaard">Mogens Nørgaard</a></p>
+            <p class="abstract">I will walk the audience through how to win over the Oracle License Police - every time. And beer.</p>
+        </div>
+    </div>
+    <!-- Session template snippet
+    <div class="row row1">
+        <div><a name="t2-s1"></a></div>
+        <div class="sessions_box span12">
+            <p class="topic">Topic?</p>
+            <p class="speaker"><a href="{{ site.baseurl }}/speakers.html#spk-???">Speaker?</a></p>
+            <p class="abstract">Abstract?</p>
+        </div>
+    </div> -->
 </div>
 <div><a name="social"></a></div>
 <div class="container bottom"><div class="row"></div></div>

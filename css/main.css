@@ -513,13 +513,12 @@ a:not(.btn) {
 #team .people .bio_box .info p.area{
   color: #98989A;
   font-style: italic;
-  font-style: 16px;
+  font-size: 14px;
   margin-bottom: 18px;
 }
 #team .people .bio_box .info p.bio{
   color: #333333;
-  font-style: italic;
-  font-style: 16px;
+  font-size: 14px;
   margin-bottom: 18px;
   margin-left: 0px;
 }
@@ -858,4 +857,33 @@ a:not(.btn) {
 
 .time {
   background-color: rgb(237, 237, 237);
+}
+
+.sessions_box{
+  /* margin: 0px; */
+}
+.sessions_box p.topic {
+  color: #333333;
+  font-style: italic;
+  margin-bottom: 4px;
+  font-size: 21px;
+}
+
+.sessions_box p.speaker{
+  color: #98989A;
+  font-style: italic;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.sessions_box p.abstract{
+  color: #333333;
+  font-size: 14px;
+  margin-bottom: 18px;
+  margin-left: 0px;
+}
+
+div.session-title{
+  font-size: 12px; 
+  margin: 10px;
 }
