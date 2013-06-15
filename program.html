@@ -11,6 +11,7 @@ class: program
             The program is a matter of change, so <a href="#social">stay tuned</a> with our latest updates.
         </div>
     </div>
+    <h3 class="bottom">Presentations</h3>
 </div>
 <div class="container">
     <div class="row-fluid session">
@@ -99,15 +100,35 @@ class: program
         <div class="span2 time">16:30 - 17:30</div>
         <div class="span10">Keynote</div>
     </div>
-    <div class="row-fluid session">
+    <div class="row-fluid session bottom">
         <div class="span2 time">17:30 - 18:00</div>
         <div class="span10">Closing</div>
     </div>
 </div>
-
+<div class="container">
+    <h3 class="bottom">Workshops</h3>
+</div>
+<!-- workshops -->
+<div class="container">
+    <div class="row-fluid session">
+        <div class="span2 time">11:00 - 13:00</div>
+        <div class="span5">?</div>
+        <div class="span5">?</div>
+    </div>
+    <div class="row-fluid session">
+        <div class="span2 time">13:00 - 14:00</div>
+        <div class="span10">Break</div>
+    </div>
+    <div class="row-fluid session">
+        <div class="span2 time">14:00 - 16:00</div>
+        <div class="span5"><div class="session-title"><a href="#w1-s2">An Undecided Customer</a> by <a href="{{ site.baseurl }}/speakers.html#spk-adrianbolboaca">Adrian Bolboaca</a></div></div>
+        <div class="span5">?</div>
+    </div>
+</div>
+<!-- workshops -->
 <div class="container bottom">
-    <div><a name="sessions"></a></div>
-    <h2>Sessions</h2>
+    <div><a name="Engineering"></a></div>
+    <h2>Engineering</h2>
     <div class="row row1">
         <div><a name="t1-s1"></a></div>
         <div class="sessions_box span12">
@@ -124,7 +145,7 @@ class: program
             <p class="abstract">If it can go wrong, it will. This humorous presentation presents “horror stories” from various projects of misunderstandings, architectural blunders, coding errors and downright bad luck. With the knowledge from this presentation, you will never make the same mistakes and will have only successful Application Development Framework projects, on time and on budget.</p>
         </div>
     </div>
-    <div class="row row1 bottom">
+    <div class="row row1">
         <div><a name="t1-s4"></a></div>
         <div class="sessions_box span12">
             <p class="topic">Data Vault in Business Intelligence</p>
@@ -132,6 +153,8 @@ class: program
             <p class="abstract">Recently arised data modelling methodology called Data Vault is becoming increasingly popular in Business Intelligence area. Data Vault is an interesting and powerful alternative to 3NF and Dimensional modelling (Star schemas) for relational Enterprise Data Warehousing. The goal of presentation is to introduce concepts of DV, show how DV fits into EDW projects and how it increases felxibility, scalability and agility of solutions as well as what kind of benefits it will give comparing to star schema and 3NF based data warehouses.</p>
         </div>
     </div>
+    <div><a name="Databases"></a></div>
+    <h2>Databases</h2>
     <div class="row row1">
         <div><a name="t2-s1"></a></div>
         <div class="sessions_box span12">
@@ -164,7 +187,7 @@ class: program
             <p class="abstract">This presentation examines all of the most important development tools and technologies available from Oracle today, discussing the strong and weak points of each: Application Express (declarative development in web browser, PL/SQL business logic, data-driven design); Application Development Framework (declarative development with JDeveloper, Java business logic, user interface driven design; Oracle Forms (the classical Oracle development tool, PL/SQL logic, data-driven design). The presentation is concluded with an overview and recommendation for how to choose the right tool and application development approach.</p>
         </div>
     </div>
-    <div class="row row1 bottom">
+    <div class="row row1">
         <div><a name="t2-s5"></a></div>
         <div class="sessions_box span12">
             <p class="topic">The Oracle License Police and Beer</p>
@@ -172,12 +195,35 @@ class: program
             <p class="abstract">I will walk the audience through how to win over the Oracle License Police - every time. And beer.</p>
         </div>
     </div>
+    <div><a name="Testing"></a></div>
+    <h2>Testing</h2>
     <div class="row row1">
         <div><a name="t3-s2"></a></div>
         <div class="sessions_box span12">
             <p class="topic">Serendipity and Perseverance — Injecting Testing in a Test-Resistant Team</p>
             <p class="speaker"><a href="{{ site.baseurl }}/speakers.html#spk-maaretpyhajarvi">Maaret Pyhäjärvi</a></p>
             <p class="abstract">Agile teams are test-infected, but what to do when team releasing regularly is more test-resistant than infected? What if there is no unit testing, let alone test-driven development, and what if developers consider themselves too valuable to testing work? In this presentation, I’ll share my lessons learned with a test-resistant team acquiring a skilled tester to help with on-time feedback with hope of ability to focus on developing new features instead of going back to fix the once “done” features over and over again. Serendipity - happy accidents to find bugs without preconceived rational explanation - favors the ones who intentionally vary their actions, and developers too can test if only time allowed and taken for testing tasks that make sense. </p>
+        </div>
+    </div>
+    <div><a name="Workshops"></a></div>
+    <h2>Workshops</h2>
+    <div class="row row1">
+        <div><a name="w1-s2"></a></div>
+        <div class="sessions_box span12">
+            <p class="topic">An Undecided Customer</p>
+            <p class="speaker"><a href="{{ site.baseurl }}/speakers.html#spk-adrianbolboaca">Adrian Bolboaca</a></p>
+            <p class="abstract">Can you write code that can be changed in a matter of minutes when your requirements change? Do you write your code clean enough that you can respect the strange requirement of your customers?</p>
+            <p class="abstract">Goals: Find out what keeps you from staying synchronized with the requirements of your customer. Learn why clean code and simple design is useful when responding to change. Learn how to be disciplined to do clean and simple design.</p>
+            <p class="abstract">Description:</p>
+            <ul>
+                <li>The facilitator will be your customer.
+                <li>At any time the requests of the customer will change.
+                <li>Your code needs to change as fast as the requirements of your customer.
+                <li>During the session we will write code, we will have fun creating emergent and easy to change design. 
+                <li>There will be three pomodoros (sessions of 25 minutes) during which you will work in pairs. The facilitator will stop you whenever the requirements change; you need to stop and to respond to the change request of the customer.
+                <li>After each session we will stop for about five minutes and talk about the progress we are making and the inconveniences we are facing. At the end we will have a conclusion of about 15 minutes when we will share the experiences we had during the session.
+            </ul>
+            <p class="abstract">You will need a laptop with a working and testing environment installed for your preferred language. This event will be language agnostic. Also you should have locally installed a source control software (git, bzr, mercurial etc).</p>
         </div>
     </div>
     <!-- Session template snippet

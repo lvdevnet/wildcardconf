@@ -895,3 +895,10 @@ div.session-title{
   font-size: 12px; 
   margin: 10px;
 }
+
+.program .container h3{
+  color: #333333;
+  font-style: italic;
+  margin-bottom: 4px;
+  font-size: 21px;
+}
