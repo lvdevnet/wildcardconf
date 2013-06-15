@@ -216,6 +216,14 @@ a:not(.btn) {
   width: 200px;
 }
 
+.home .media.sponsors {
+  font-size: 14px;
+  font-weight: 300;
+}
+.home .media.sponsors img {
+  width: 120px;
+}
+
 
 .home .register {
   margin-top: 100px;
