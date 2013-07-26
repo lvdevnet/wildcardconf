@@ -533,6 +533,9 @@ a:not(.btn) {
 #team .people .bio_box .info a {
   margin-right: 10px;
 }
+.bio a{
+  margin: 0px !important;
+}
 #team .people .bio_box .info a span{
   display: inline-block;
   width: 33px;
