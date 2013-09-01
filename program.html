@@ -45,7 +45,7 @@ class: program
     	<div class="span2 time">11:00 - 11:45</div>
     	<div class="span2"><div class="session-title"><a href="#t1-s1">Kinect — the Eyes and Ears of Windows</a> by <a href="{{ site.baseurl }}/speakers.html#spk-andrasvelvart">András Velvárt</a></div></div>
     	<div class="span2"><div class="session-title"><a href="#t2-s1">Exploring PL/SQL New Features and Best Practices for Better Performance</a> by <a href="{{ site.baseurl }}/speakers.html#spk-amiaharonovich">Ami Aharonovich</a></div></div>
-    	<div class="span2">Coming soon…</div>
+    	<div class="span2"><div class="session-title"><a href="#t3-s1">Test-driven Infrastructure with Chef</a> by <a href="{{ site.baseurl }}/speakers.html#spk-stephennelsonsmith">Stephen Nelson-Smith</a></div></div>
     	<div class="span2"><div class="session-title"><a href="#t4-s1">Return of knife and train. Working with graphics for web.</a> by <a href="{{ site.baseurl }}/speakers.html#spk-vadimmakeev">Vadim Makeev</a></div></div>
     	<div class="span2"><div class="session-title"><a href="#t5-s1">#NoMetrics — the ephemeral role of data in decision making</a> by <a href="{{ site.baseurl }}/speakers.html#spk-torbjorngyllebring">Torbjörn Gyllebring</a></div></div>
 
@@ -89,7 +89,7 @@ class: program
         <div class="span2 time">16:00 - 16:30</div>
         <div class="span2">Coming soon…</div>
         <div class="span2"><div class="session-title"><a href="#t2-s5">The Oracle License Police and Beer</a> by <a href="{{ site.baseurl }}/speakers.html#spk-mogensnorgaard">Mogens Nørgaard</a></div></div>
-        <div class="span2">Coming soon…</div>
+        <div class="span2"><div class="session-title"><a href="#t3-s5">Test Data Management Principles</a> by <a href="{{ site.baseurl }}/speakers.html#spk-janmusil">Jan Musil</a></div></div>
         <div class="span2"><div class="session-title"><a href="#t4-s5">Unicode in JavaScript</a> by <a href="{{ site.baseurl }}/speakers.html#spk-mathiasbynens">Mathias Bynens</a></div></div>
         <div class="span2"><div class="session-title"><a href="#t5-s5">Agile on Board or How We Do It at Intel</a> by <a href="{{ site.baseurl }}/speakers.html#spk-artemfedko">Artem Fedko</a></div></div>
     </div>
@@ -239,6 +239,14 @@ class: program
     <div><a name="Testing"></a></div>
     <h2>Testing</h2>
     <div class="row row1">
+        <div><a name="t3-s1"></a></div>
+        <div class="sessions_box span12">
+            <p class="topic">Test-driven Infrastructure with Chef</p>
+            <p class="speaker"><a href="{{ site.baseurl }}/speakers.html#spk-stephennelsonsmith">Stephen Nelson-Smith</a></p>
+            <p class="abstract">Coming soon…</p>
+        </div>
+    </div>
+    <div class="row row1">
         <div><a name="t3-s2"></a></div>
         <div class="sessions_box span12">
             <p class="topic">Serendipity and Perseverance — Injecting Testing in a Test-Resistant Team</p>
@@ -262,6 +270,21 @@ class: program
             <p class="abstract">Automated web integration testing is very powerful, yet still immature. This session aims at making this messy ground clearer through proper definitions, an overview of the state of the art, presentation of current best practices, and a reflection on what this domain is still missing to reveal its full strength.</p>
             <p class="abstract">You will learn from the experience gained through 5 months of full-time research and development on the topic, and one year of usage in a continuous deployment environment, with fully automated cross-browser test suites being run in the cloud on every push.</p>
             <p class="abstract">By the end of the presentation, you will know exactly what is (and what isn't) integration testing on the web, what you can expect from it, how your production pipeline could integrate it, and which difficulties we as a community should focus on solving.</p>
+        </div>
+    </div>
+    <div class="row row1">
+        <div><a name="t3-s5"></a></div>
+        <div class="sessions_box span12">
+            <p class="topic">Test Data Management Principles</p>
+            <p class="speaker"><a href="{{ site.baseurl }}/speakers.html#spk-janmusil">Jan Musil</a></p>
+            <p class="abstract">This session will cover Test Data Management principles, will also share some real life implementation experiences:</p>
+            <ul>
+                <li>Prerequisites to implement such solution in general (e.g. documented relational data model, how to use existing relational relationships, what to do if the relational relationships are defined only on application level etc.)
+                <li>What's necessary to extract from the production system (schema or data or both), how to define the correct traversal process (e.g. from parent to child and optionally back)
+                <li>Why the correct table and column mapping between production source and test target is important and which methods can be used
+                <li>How to manage the sensitive data and which methods to use to do the correct masking, why is important to preserve PK/FK relationships even if PK will be masked etc.
+                <li>How to create the subset of the test data based on existing relational model etc.
+            </ul>
         </div>
     </div>
     <div><a name="Web+Mobile"></a></div>
