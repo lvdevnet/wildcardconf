@@ -894,6 +894,14 @@ a:not(.btn) {
   margin-left: 0px;
 }
 
+.sessions_box p.time-and-place{
+  color: #98989A;
+  font-size: 12px;
+  font-style: italic;
+  margin-bottom: 18px;
+  margin-left: 0px;
+}
+
 div.session-title{
   font-size: 12px; 
   margin: 10px;
