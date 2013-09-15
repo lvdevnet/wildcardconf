@@ -533,6 +533,10 @@ a:not(.btn) {
 #team .people .bio_box .info a {
   margin-right: 10px;
 }
+.sessions_box .info a {
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
 .bio a{
   margin: 0px !important;
 }
@@ -541,6 +545,26 @@ a:not(.btn) {
   width: 33px;
   height: 33px;
 }
+
+.sessions_box .info a span{
+  display: inline-block;
+  width: 33px;
+  height: 33px;
+}
+
+.sessions_box .info span.ico1,
+.sessions_box .info span.ico1h{
+  background-position: 0px 0px;
+}
+.sessions_box .info span.ico2,
+.sessions_box .info span.ico2h{
+  background-position: -37px 0px;
+}
+.sessions_box .info span.ico3,
+.sessions_box .info span.ico3h{
+  background-position: -75px 0px;
+}
+
 #team .people .bio_box .info span.ico1,
 #team .people .bio_box .info span.ico1h{
   background-position: 0px 0px;
@@ -605,6 +629,26 @@ a:not(.btn) {
 #team .people .bio_box .info a:hover span.socialicons-gp_h{
   display: inline-block !important;
 }
+
+.sessions_box .info a:hover span.socialicons-link{
+  display: none;
+}
+.sessions_box .info a:hover span.socialicons-link_h{
+  display: inline-block !important;
+}
+.sessions_box .info a:hover span.socialicons-prez{
+  display: none;
+}
+.sessions_box .info a:hover span.socialicons-prez_h{
+  display: inline-block !important;
+}
+.sessions_box .info a:hover span.socialicons-youtube{
+  display: none;
+}
+.sessions_box .info a:hover span.socialicons-youtube_h{
+  display: inline-block !important;
+}
+
 .socialicons{
   background: url('../i/social/socialicons.png') no-repeat;
   width: 265px;
@@ -667,6 +711,42 @@ a:not(.btn) {
 }
 .socialicons-gp_h{
   background: url('../i/social/Google+_h.png') no-repeat;
+  width: 265px;
+  height: 36px;
+  display: none !important;
+}
+
+.socialicons-link{
+  background: url('../i/social/link.png') no-repeat;
+  width: 265px;
+  height: 36px;
+}
+.socialicons-link_h{
+  background: url('../i/social/link_h.png') no-repeat;
+  width: 265px;
+  height: 36px;
+  display: none !important;
+}
+
+.socialicons-prez{
+  background: url('../i/social/prez.png') no-repeat;
+  width: 265px;
+  height: 36px;
+}
+.socialicons-prez_h{
+  background: url('../i/social/prez_h.png') no-repeat;
+  width: 265px;
+  height: 36px;
+  display: none !important;
+}
+
+.socialicons-youtube{
+  background: url('../i/social/youtube.png') no-repeat;
+  width: 265px;
+  height: 36px;
+}
+.socialicons-youtube_h{
+  background: url('../i/social/youtube_h.png') no-repeat;
   width: 265px;
   height: 36px;
   display: none !important;
@@ -872,6 +952,7 @@ a:not(.btn) {
 
 .sessions_box{
   /* margin: 0px; */
+  margin-bottom: 18px;
 }
 .sessions_box p.topic {
   color: #333333;
@@ -898,7 +979,7 @@ a:not(.btn) {
   color: #98989A;
   font-size: 12px;
   font-style: italic;
-  margin-bottom: 18px;
+  margin-bottom: 10px;
   margin-left: 0px;
 }
 
