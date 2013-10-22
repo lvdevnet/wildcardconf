@@ -99,20 +99,20 @@ a:not(.btn) {
   font-size: 32px;
 }
 .home .carousel-inner .item1 {
-  background-image: url('../i/carousel/conf.jpg');
+  background-image: url('../i/carousel/wcuc1-2.jpg');
 }
 .home .carousel-inner .item2 {
-  background-image: url('../i/carousel/jurmala1.jpg');
+  background-image: url('../i/carousel/wcuc1-6.jpg');
 }
 .home .carousel-inner .item3 {
-  background-image: url('../i/carousel/hands.jpg');
+  background-image: url('../i/carousel/wcuc1-7.jpg');
 }
 .home .carousel-inner .item4 {
-  background-image: url('../i/carousel/jurmala.jpg');
+  background-image: url('../i/carousel/wcuc1-5.jpg');
 }
-.home .carousel-inner .item5 {
+/*.home .carousel-inner .item5 {
   background-image: url('../i/carousel/conf3.jpg');
-}
+}*/
 .carousel-indicators {
   top: auto;
   right: auto;
