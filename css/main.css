@@ -126,38 +126,47 @@ a:not(.btn) {
 }
 
 
+.wrapup .organizers .logo,
 .home .organizers .logo {
   height: 120px;
   text-align: center;
   line-height: 120px;
 }
+.wrapup .organizers .logo img,
 .home .organizers .logo img {
   vertical-align: middle;
 }
+.wrapup .organizers .ldn img,
 .home .organizers .ldn img {
   height: 120px;
 }
+.wrapup .organizers .agile-latvia img,
 .home .organizers .agile-latvia img {
   height: 100px;
 }
+.wrapup .organizers .lvoug img,
 .home .organizers .lvoug img {
   height: 70px;
 }
+.wrapup .co-organizers .logo,
 .home .co-organizers .logo {
   height: 60px;
   text-align: center;
   line-height: 60px;
 }
+.wrapup .organizers .co-org img,
 .home .organizers .co-org img {
   height: 40px;
 }
 @media (min-width: 480px) and (max-width: 767px) {
+  .wrapup .organizers .logo,
   .home .organizers .logo {
     height: auto;
     line-height: inherit;
     float: left;
     margin: 0 20px 20px 0;
   }
+  .wrapup .organizers > div,
   .home .organizers > div {
     clear: left;
     margin: 40px 0;
@@ -165,41 +174,51 @@ a:not(.btn) {
 }
 
 
+.wrapup .features li,
 .home .features li {
   margin: 60px 0;
   padding: 0 10px;
 }
+.wrapup .features li,
 .home .features li {
   margin-top: 0;
 }
+.wrapup .features li .media-body,
 .home .features li .media-body {
   padding: 30px 35px 40px 35px;
 }
+.wrapup .features i,
 .home .features i {
   margin-right: 15px;
   font-size: 42px;
   color: #1189d9;
 }
+.wrapup .features img.media-object,
 .home .features img.media-object {
   width: 42.5%;
 }
 @media (max-width: 979px) {
+  .wrapup .features li ,
   .home .features li {
     margin: 30px 0;
   }
+  .wrapup .features li .media-body,
   .home .features li .media-body {
     padding: 15px 25px 20px;
   }
 }
 @media (max-width: 767px) {
+  .wrapup .features li,
   .home .features li {
     margin: 20px 0;
   }
+  .wrapup .features li .media-body,
   .home .features li .media-body {
     padding: 0;
   }
 }
 @media (min-width: 978px) {
+  .wrapup .features .media,
   .home .features .media {
     width: 940px;
     margin-left: auto;
@@ -208,21 +227,27 @@ a:not(.btn) {
 }
 
 
+.wrapup .platinum.sponsors,
 .home .platinum.sponsors {
   font-size: 21px;
   font-weight: 300;
 }
+.wrapup .platinum.sponsors img,
 .home .platinum.sponsors img {
   width: 200px;
 }
 
+.wrapup .media.sponsors,
 .home .media.sponsors {
   font-size: 14px;
   font-weight: 300;
 }
+
+.wrapup .media.sponsors img,
 .home .media.sponsors img {
   width: 120px;
 }
+
 
 
 .home .register {
@@ -993,4 +1018,77 @@ div.session-title{
   font-style: italic;
   margin-bottom: 4px;
   font-size: 21px;
+}
+
+/* xxx */
+
+
+/* Navbar
+-------------------------------------------------- */
+/*body.pull_top {
+    padding-top: 0px !important;
+}
+header {
+    background: rgba(0,0,0,.6) !important;
+}*/
+.navbar.navbar-static-top {
+    margin-bottom: 35px;
+}
+.navbar.transparent.navbar-inverse .navbar-inner {
+    background: rgba(0,0,0,0.4);
+    border-bottom: 1px solid rgb(88, 88, 88);
+}
+.navbar.transparent.navbar-inverse .navbar-inner .container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    -webkit-transition: margin .2s ease-in-out;
+    -moz-transition: margin .2s ease-in-out;
+    transition: margin .2s ease-in-out;
+}
+.navbar.navbar-inverse .navbar-inner {  
+    padding: 10px 0px 10px 0px;
+    background: #252528;    
+}
+.navbar.navbar-inverse .navbar-inner.sticky {
+    background: rgba(0,0,0,0.8);
+    border-bottom: 1px solid #252525;
+}
+.navbar-inverse .navbar-inner.sticky .container {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+.navbar-inverse .brand {
+    color: #fff;
+}
+.navbar-inverse .nav > li > a {
+    /*color: rgb(177, 177, 177);
+    font-size: 13px;
+    font-weight: bold;*/
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0,0,0,.5);
+    opacity: .6;
+    filter: alpha(opacity=60);
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    transition: all .2s linear;
+}
+.navbar-inverse .nav > li > a:hover,
+.navbar-inverse .nav > li > a.active {
+    color: #fff;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.navbar-inverse .dropdown-menu {
+  background: #252528;
+}
+.navbar-inverse .nav > li > .dropdown-menu::after {
+  border-bottom: 6px solid #252528;
+}
+.navbar-inverse .dropdown-menu li > a {
+  color: #fff;
+}
+.dropdown-menu li > a:hover,
+.dropdown-menu li > a:focus,
+.dropdown-submenu:hover > a {
+  text-decoration: none;
 }
