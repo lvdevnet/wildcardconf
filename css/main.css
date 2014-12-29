@@ -35,6 +35,15 @@ a:not(.btn) {
   padding-bottom: 60px; /* removing white area in the end of page */
 }
 
+.container .main-page-text {
+  display: inline-block;
+  margin: 20px 0;
+  font-size: 24px;
+  font-weight: 100;
+  color: #777;  
+  line-height: 1.3em;
+}
+
 .container h2 {
   display: inline-block;
   margin: 50px 0;
@@ -99,18 +108,18 @@ a:not(.btn) {
   font-size: 32px;
 }
 .home .carousel-inner .item1 {
-  background-image: url('../i/carousel/wcuc1-2.jpg');
+  background-image: url('../i/carousel/wcuc15-1.jpg');
 }
 .home .carousel-inner .item2 {
-  background-image: url('../i/carousel/wcuc1-6.jpg');
+  background-image: url('../i/carousel/wcuc15-2.jpg');
 }
 .home .carousel-inner .item3 {
-  background-image: url('../i/carousel/wcuc1-7.jpg');
+  background-image: url('../i/carousel/wcuc15-3.jpg');
 }
-.home .carousel-inner .item4 {
+/*.home .carousel-inner .item4 {
   background-image: url('../i/carousel/wcuc1-5.jpg');
 }
-/*.home .carousel-inner .item5 {
+.home .carousel-inner .item5 {
   background-image: url('../i/carousel/conf3.jpg');
 }*/
 .carousel-indicators {

@@ -1,47 +1,45 @@
 ---
-layout: default
-class: home
-
-carousel:
-  - title: <br> 
-    text: <br><br><br>
-    link: /e/201505/speakers.html
-    link_text: Call for Speakers »
-  - title: Go for it!
-    text: The first Latvian IT community driven conference series!<br>May, 2015; Riga, Latvia
-    link: /e/201505/speakers.html
-    link_text: Call for Speakers »
-  - title: “Everyone's invited!”
-    text: That's our motto. And that's a good motto for unconference. Why?<br>Because we can learn from each other and nurture our knowledge and experience together.
-    link: /about.html
-    link_text: About »
+layout: wuc20131207
+class: wrapup
 ---
-<div id="carousel" class="carousel slide hidden-phone">
-    <div class="carousel-inner">
-        {% for item in page.carousel %}
-        <div class="item item{{ forloop.index }}{% if forloop.first %} active{% endif %}">
-            <div class="container slide">
-                <p class="media-heading">{{ item.title }}</p>
-                {% if item.text %}<p>{{ item.text }}</p>{% endif %}
-                {% if item.link %}<a href="{{ site.baseurl }}{{ item.link }}" class="btn btn-large">{{ item.link_text }}</a>{% endif %}
-            </div>
-        </div>
-        {% endfor %}
-    </div>
-    <ol class="carousel-indicators">
-        {% for item in page.carousel %}
-        <li data-target="#carousel" data-slide-to="{{ forloop.index0 }}"{% if forloop.first %} class="active"{% endif %}></li>
-        {% endfor %}
-    </ol>
-</div>
 <div class="container">
-    <p class="main-page-text">That’s right! Even taking into consideration the fact that technology changes damn rapidly nowadays. It’s even not so easy to keep abreast of the news about the bleeding edge stuff. But there’s a way, the way of learning from others and sharing what you’ve been learned and this way called the unconference.</p>
-    <p class="main-page-text">We selected the format which is close to the original unconference format, because it creates the space for peer-to-peer learning, collaboration and creativity. Anybody can submit the talk, and the agenda is created by the attendees themselves. The sessions might be formal or informal, full of years of experience or just an introductory talk to something new.</p>
-    <p class="main-page-text">Join as a speaker! Everyone's invited! Submit your session <a href="http://wildcardconf.com/e/201505/speakers.html">here</a>.</p>
+    <h2>Why it is so different?</h2>
+    <ul class="features media-list">
+        <li class="media">
+            <img class="media-object img-rounded hidden-phone pull-left" src="{{ site.baseurl }}/i/features/wcuc1-4.jpg">
+            <div class="media-body">
+                <h3 class="media-heading">
+                    <i class="icon-comments"></i>
+                    “Everyone's invited!”
+                </h3>
+                <p>Yes! With the motto 'Everyone's invited!' we're planning to go even further. Now we aim at bringing knowledge sharing authorship to everyone. Not only selected professionals have a right to declare the point of view from the stage, but every attendee is encouraged to actively participate and make the point this time. Why? Because we are the IT community.</p>
+            </div>
+        </li>
+        <li class="media">
+            <img class="media-object img-rounded hidden-phone pull-right" src="{{ site.baseurl }}/i/features/wcuc1-9.jpg">
+            <div class="media-body">
+                <h3 class="media-heading">
+                    <i class="icon-picture"></i>
+                    Why unconference?
+                </h3>
+                <p>We select this unique format, because it creates the space for peer-to-peer learning, collaboration and creativity. The sessions convened will range from formal to informal: from the well thought out talk reflecting years of practice to the ‘new idea’ that would be fun to talk about, from the demonstration of a working tool to the white-boarding of something completely new.</p>
+            </div>
+        </li>
+        <li class="media">
+            <img class="media-object img-rounded hidden-phone pull-left" src="{{ site.baseurl }}/i/features/wcuc1-1.jpg">
+            <div class="media-body">
+                <h3 class="media-heading">
+                    <i class="icon-group"></i>
+                    Why should I?
+                </h3>
+                <p>Because it is good deed. As it will be a FREE-for-ANYONE event, we invite sponsors to help us to make it as nicer as possible. Any help will be appreciated, both in-kind and financial. We target the IT professionals as well as out-of-industry people, especially the students.</p>
+            </div>
+        </li>
+    </ul>
     
-    <!--<div><a name="sponsors"></a></div>
+    <div><a name="sponsors"></a></div>
     <h2>Our gratitude to</h2>
-     <div class="platinum sponsors row">
+    <div class="platinum sponsors row">
         <div class="span3">
             <a href="http://www.axioma.lv">
                 <img src="{{ site.baseurl }}/i/sponsors/axioma.png" alt="Axioma">
@@ -69,6 +67,7 @@ carousel:
                 <img src="{{ site.baseurl }}/i/sponsors/lifehacklv.png" alt="LifeHack.lv">
             </a>
         </div>
+        <!-- 
         <div class="span2">
             <a href="http://likeit.lv/">
                 <img src="{{ site.baseurl }}/i/sponsors/likeit.png" alt="Like IT">
@@ -94,7 +93,8 @@ carousel:
                 <img src="{{ site.baseurl }}/i/sponsors/oracle.png" alt="Oracle">
             </a>
         </div>
-    </div> -->
+        -->
+    </div>
 
 
     <div><a name="organizers"></a></div>
