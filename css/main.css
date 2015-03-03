@@ -566,6 +566,7 @@ a:not(.btn) {
 }
 #team .people .bio_box .info a {
   margin-right: 10px;
+  text-decoration: none;
 }
 .sessions_box .info a {
   margin-right: 10px;
