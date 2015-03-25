@@ -1,0 +1,38 @@
+<metapackage xmlns:os="http://opensuse.org/Standards/One_Click_Install" xmlns="http://opensuse.org/Standards/One_Click_Install">
+  <group>
+    <repositories>
+      <repository recommended="true">
+        <name>home:lemmy04</name>
+        <summary>Miscellaneous</summary>
+        <description>Various miscellaneous packages that I've build myself, either because they aren't included in openSUSE, or not in the latest version.
+
+The packages are linked against openSUSE_xx.y/standard plus updates plus the latest stable KDE Repository for that release if available.
+
+This basically means that to use this repository you'll also need to enable KDE:Current for your system.</description>
+        <url>http://download.opensuse.org/repositories/home:/lemmy04/openSUSE_13.2/</url>
+      </repository>
+      <repository recommended="true">
+        <name>openSUSE:13.2:Update</name>
+        <summary>Online updates for openSUSE 13.2</summary>
+        <description>This project is releasing the official updates for openSUSE 13.2.</description>
+        <url>http://download.opensuse.org/repositories/openSUSE:/13.2:/Update/standard/</url>
+      </repository>
+      <repository recommended="false">
+        <name>openSUSE:13.2</name>
+        <summary>Test setup for 13.2</summary>
+        <description>This is really just a snapshot of Factory, but we need it to adapt the tools to later test and accept requests to it.</description>
+        <url>http://download.opensuse.org/repositories/openSUSE:/13.2/standard/</url>
+      </repository>
+    </repositories>
+    <software>
+      <item>
+        <name>fuse-exfat</name>
+        <summary>Free exFAT file system implementation</summary>
+        <description>This driver is the first free exFAT file system implementation with write
+support. exFAT is a simple file system created by Microsoft. It is intended
+to replace FAT32 removing some of it's limitations. exFAT is a standard FS
+for SDXC memory cards.</description>
+      </item>
+    </software>
+  </group>
+</metapackage>
